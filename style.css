@@ -1,5 +1,52 @@
 
-/* LINKS DO MENU */
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8f5;
+    color: #26352d;
+    line-height: 1.7;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: linear-gradient(135deg, #102d25, #176b48);
+    color: white;
+}
+
+/* MENU */
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a7e66b;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
 
 .menu a {
     color: white;
@@ -11,6 +58,45 @@
     border-bottom: 2px solid #a7e66b;
 }
 
+/* BANNER */
+
+.banner {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.banner-conteudo {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #4f9b62;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.banner .subtitulo {
+    color: #a7e66b;
+}
+
+.banner h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.banner h1 span {
+    color: #a7e66b;
+}
+
+.banner p {
+    color: #d8e7dc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
 
 /* BOTÕES */
 
@@ -30,8 +116,43 @@
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* INTRODUÇÃO */
 
-/* CARDS DE BENEFÍCIOS */
+.introducao {
+    padding: 90px 12%;
+    text-align: center;
+}
+
+.introducao h2,
+.beneficios h2,
+.dicas h2,
+.consumo h2,
+.midia h2 {
+    font-size: 32px;
+    margin: 15px 0 25px;
+}
+
+.introducao p {
+    max-width: 850px;
+    margin: 15px auto;
+    color: #64746a;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios {
+    background-color: #e8f2e9;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
 
 .card {
     background-color: white;
@@ -46,8 +167,30 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+.icone {
+    font-size: 40px;
+}
 
-/* CARDS DAS DICAS */
+.card h3 {
+    margin: 15px 0;
+    color: #176b48;
+}
+
+/* DICAS */
+
+.dicas {
+    padding: 90px 12%;
+}
+
+.dicas h2 {
+    margin-bottom: 40px;
+}
+
+.lista-dicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
 
 .dica {
     display: flex;
@@ -63,15 +206,76 @@
     box-shadow: 0 8px 15px rgba(23, 107, 72, 0.15);
 }
 
+.dica span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4f9b62;
+}
 
-/* LINHAS DA TABELA */
+.dica h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* CONSUMO E TABELA */
+
+.consumo {
+    padding: 90px 10%;
+    text-align: center;
+    background-color: #e8f2e9;
+}
+
+.consumo > p {
+    margin-bottom: 30px;
+    color: #64746a;
+}
+
+.tabela-container {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #176b48;
+    color: white;
+}
+
+th, td {
+    padding: 18px 22px;
+    border-bottom: 1px solid #e1e8e2;
+}
 
 tbody tr:hover {
     background-color: #d9eedb;
 }
 
+.observacao {
+    font-size: 13px;
+    margin-top: 15px;
+}
 
-/* CARDS DE MÍDIA */
+/* VÍDEO E ÁUDIO */
+
+.midia {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.midia-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
 
 .midia-card {
     background-color: white;
@@ -84,4 +288,129 @@ tbody tr:hover {
 .midia-card:hover {
     background-color: #e8f2e9;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.midia-card h3 {
+    color: #176b48;
+    margin-bottom: 15px;
+}
+
+.midia-card p {
+    margin-bottom: 20px;
+    color: #64746a;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* CONSCIENTIZAÇÃO */
+
+.conscientizacao {
+    background: linear-gradient(135deg, #176b48, #102d25);
+    padding: 80px 12%;
+    text-align: center;
+    color: white;
+}
+
+.conscientizacao h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.conscientizacao p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    color: #d8e7dc;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #10251d;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.rodape h3 {
+    color: #a7e66b;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #a9b8ad;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 850px) {
+
+    .navegacao {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .lista-dicas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .banner {
+        padding: 60px 7%;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .introducao,
+    .dicas,
+    .consumo,
+    .midia {
+        padding: 60px 7%;
+    }
+
+    .introducao h2,
+    .beneficios h2,
+    .dicas h2,
+    .consumo h2,
+    .midia h2 {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
 }
