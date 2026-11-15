@@ -1,0 +1,87 @@
+
+/* LINKS DO MENU */
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #a7e66b;
+    border-bottom: 2px solid #a7e66b;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+    background-color: #a7e66b;
+    color: #173a29;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #176b48;
+    color: white;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* CARDS DE BENEFÍCIOS */
+
+.card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    width: 290px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+    background-color: #d9eedb;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* CARDS DAS DICAS */
+
+.dica {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.dica:hover {
+    background-color: #e8f2e9;
+    box-shadow: 0 8px 15px rgba(23, 107, 72, 0.15);
+}
+
+
+/* LINHAS DA TABELA */
+
+tbody tr:hover {
+    background-color: #d9eedb;
+}
+
+
+/* CARDS DE MÍDIA */
+
+.midia-card {
+    background-color: white;
+    padding: 30px;
+    width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.midia-card:hover {
+    background-color: #e8f2e9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
